@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+
+  </header>
+  <main>  <div id="Verif">
+      <h1>DETAILS</h1>
+      <p>Voici les details de votre Article .</p>
+  
+      <div id="Output"></div>
+      <button id="Verif-btn">D'accord</button>
+    </div>
+    <section class="section1">
+      <form onsubmit="functionOne(event);return false;">
+        <div>
+        <label for="Nom">Nom du produit</label>
+        <input type="text" id="Nom">
+      </div>
+      <div>
+        <label for="marque">Marque</label>
+        <input type="text" id="marque">
+      </div>
+      <div>
+        <label for="prix" >Prix</label>
+        <input type="number" step="any" id="prix">
+      </div>
+      <div>
+        <label for="ProdDate">Date de production</label>
+        <input type="date" id="ProdDate">
+      </div>
+      <div>
+        <label for="type">Type</label>
+        <select name="Type" id="prod-type">
+          <option value="">--Veuillez choisir une option--</option>
+          <option value="Hygiène et Toilette">Hygiène et Toilette</option>
+          <option value="Soins Esthétiques">Soins Esthétiques</option>
+          <option value="Produits Solaires">Produits Solaires</option>
+          <option value="Beauté des Mains et des Pieds">Beauté des Mains et des Pieds</option>
+          <option value="Produits de Maquillage">Produits de Maquillage</option>
+          <option value="Entretien Capillaires">Entretien Capillaires</option>
+          <option value="Parfums">Parfums</option>
+        </select>
+      </div>
+      <div>
+        <label for="Promo">Promotion:</label>
+        <label for="">Non</label><input type="radio" name="promo" value="Non" id="Non">
+        <label for="">Oui</label><input type="radio" name="promo" value="Oui" id="Oui">
+      </div>
+      <div>
+        <input type="submit" value="submit" id="sub" onclick="">
+        <h4 id="errout" style="color: red ;"></h4>
+      </div>
+      </form>
+    </section>
+    <section class="section2">
+      <table id="tb">
+       <tr class="tbl-header">
+        <th>Nom</th>
+        <th>Marque</th>
+        <th>Prix</th>
+        <th>Date de production</th>
+        <th>Type</th>
+        <th>Promotion</th>
+        <th>Functions</th>
+      </tr>
+      </table>
+    </section>
+  
+  </main>
+  <script src="./java.js"></script>
+</body>
+</html>
